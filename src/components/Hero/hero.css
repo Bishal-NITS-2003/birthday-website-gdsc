@@ -1,0 +1,253 @@
+@media (min-width: 992px) {
+  .hero-container {
+    background-image: url("https://wallpapers.com/images/hd/happy-birthday-background-xzvg2wmgbs0uemvk.jpg");
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    animation: zoomOut 3s ease-in-out forwards;
+  }
+
+  @keyframes zoomOut {
+    0% {
+      z-index: 1;
+      transform: scale(1.5);
+      transform-origin: right; /* Starting zoom from the top left corner */
+    }
+    100% {
+      z-index: 1;
+      transform: scale(1);
+      transform-origin: top left; /* Ending with full-size background */
+    }
+  }
+
+  .hero-birthday-card {
+    width: 700px;
+    height: 500px;
+    position: relative;
+    top: 100px;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+  }
+  .hero-birthday-card:hover {
+    transform: rotate(-5deg);
+  }
+  .hero-birthday-card:hover .outside {
+    transform: rotateY(-180deg);
+  }
+  .outside,
+  .inside {
+    background-image: url("/images/greeting-2.png");
+    background-position: top;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+  }
+  .inside {
+    background: url("/images/greeting-2.png");
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+  }
+  .outside {
+    background-image: url("/images/greeting-2.png");
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    cursor: pointer;
+  }
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+  }
+  .front {
+    background-image: url("/images/greeting-2.png");
+    background-position: top;
+    background-size: cover;
+  }
+  .back {
+    background-image: url("/images/greeting-2.png");
+    transform: rotateY(180deg);
+  }
+  .cake {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+  }
+  .top-layer,
+  .middle-layer,
+  .bottom-layer {
+    height: 80px;
+    width: 240px;
+    background-repeat: repeat;
+    background-size: 60px 100px;
+    background-position: 28px 0;
+    background-image: linear-gradient(
+        transparent 50px,
+        #fedbab 50px,
+        #fedbab 60px,
+        transparent 60px
+      ),
+      radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin: auto;
+  }
+  .middle-layer {
+    transform: scale(0.85);
+    top: 6px;
+  }
+  .top-layer {
+    transform: scale(0.7);
+    top: 26px;
+  }
+
+  .inside h1 {
+    font-size: 120px;
+    line-height: 120px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-container {
+    background-image: url("https://wallpapers.com/images/hd/happy-birthday-background-xzvg2wmgbs0uemvk.jpg");
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+    animation: zoomOut 3s ease-in-out forwards;
+  }
+
+  @keyframes zoomOut {
+    0% {
+      z-index: 1;
+      transform: scale(1.5);
+      transform-origin: right; /* Starting zoom from the top left corner */
+    }
+    100% {
+      z-index: 1;
+      transform: scale(1);
+      transform-origin: top left; /* Ending with full-size background */
+    }
+  }
+  .hero-birthday-card {
+    display: none;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    -webkit-perspective: 1200px;
+    perspective: 1200px;
+    transition: 1s;
+  }
+  .hero-birthday-card:hover {
+    transform: rotate(-5deg);
+  }
+  .hero-birthday-card:hover .outside {
+    transform: rotateY(-180deg);
+  }
+  .outside,
+  .inside {
+    background-image: url("/images/greeting-2.png");
+    background-position: top;
+    background-size: cover;
+    height: 100%;
+    width: 50%;
+    position: absolute;
+    left: 50.1%;
+  }
+  .inside {
+    background: url("/images/greeting-2.png");
+    line-height: 3;
+    padding: 0 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+  }
+  .outside {
+    background-image: url("/images/greeting-2.png");
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transform-origin: left;
+    transition: 2s;
+    cursor: pointer;
+  }
+  .front,
+  .back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transform: rotateX(0deg);
+  }
+  .front {
+    background-image: url("/images/greeting-2.png");
+    background-position: top;
+    background-size: cover;
+  }
+  .back {
+    background-image: url("/images/greeting-2.png");
+    transform: rotateY(180deg);
+  }
+  .cake {
+    width: 100%;
+    position: absolute;
+    bottom: 30px;
+  }
+  .top-layer,
+  .middle-layer,
+  .bottom-layer {
+    height: 80px;
+    width: 240px;
+    background-repeat: repeat;
+    background-size: 60px 100px;
+    background-position: 28px 0;
+    background-image: linear-gradient(
+        transparent 50px,
+        #fedbab 50px,
+        #fedbab 60px,
+        transparent 60px
+      ),
+      radial-gradient(circle at 30px 5px, #994c10 30px, #fcbf29 31px);
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin: auto;
+  }
+  .middle-layer {
+    transform: scale(0.85);
+    top: 6px;
+  }
+  .top-layer {
+    transform: scale(0.7);
+    top: 26px;
+  }
+
+  .inside h1 {
+    font-size: 120px;
+    line-height: 120px;
+  }
+}

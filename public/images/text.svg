@@ -1,0 +1,11 @@
+<svg width="300" height="200" viewBox="0 0 300 200">
+  <!-- Define a curved path -->
+  <path id="curvePath" d="M 50,150 Q 150,50 250,150" fill="transparent" />
+
+  <!-- Use the path for the text -->
+  <text font-size="20" fill="black">
+    <textPath href="#curvePath">
+      Curved Text Example
+    </textPath>
+  </text>
+</svg>
